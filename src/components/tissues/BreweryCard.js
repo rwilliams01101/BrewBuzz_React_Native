@@ -7,13 +7,11 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import IconAtom from "../atoms/IconAtom.js";
+import IconsMolecule from "../molecules/IconsMolecule.js";
 
-const IconsMolecule = (props) => {
+const BreweryCard = (props) => {
   const size1 = parseInt(props.size);
-  console.log(size1);
 
-  //const [Tize, setSize] = useSize('')
   const styles = StyleSheet.create({
     normal: {
       fontSize: size1,
@@ -27,12 +25,9 @@ const IconsMolecule = (props) => {
 
   return (
     <View style={{ flex: 1, flexDirection: "row" }}>
-      <IconAtom iconType="directionicon"></IconAtom>
-      <IconAtom iconType="Phone"></IconAtom>
-      <IconAtom iconType="shareicon"></IconAtom>
-      <IconAtom iconType="webicon"></IconAtom>
+      <IconsMolecule></IconsMolecule>
     </View>
   );
 };
 
-export default IconsMolecule;
+export default BreweryCard;
