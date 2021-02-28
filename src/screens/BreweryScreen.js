@@ -11,6 +11,7 @@ const BreweryScreen = () => {
             <TextAtom size='50' text='hello'></TextAtom>
             <TextAtom size='100' text='Hi!'></TextAtom>
             <IconsMolecule/>
+            <IconAtom iconType = 'webicon'></IconAtom>
         </View>
 
     )
